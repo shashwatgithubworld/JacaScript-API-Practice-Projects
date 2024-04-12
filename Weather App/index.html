@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App : Shashwat</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/404987a242.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Body starts Here -->
+    <div class="weather-container">
+
+        <!-- // ---- Search Input and Search button --- // -->
+
+      <form class="search-form" action="">
+        <input class="city-input" type="text" placeholder="Enter city name" />
+           <button class="search-btn" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+           </button>
+      </form>
+
+      <!-- // ---- Search Input and Search button ends here --- // -->
+
+      <!-- // --- City name and Date section start here ----- //  -->
+      <div class="city-date-section">
+        <h2 class="city">Delhi</h2>
+        <p class="date">12 April 2024</p>
+      </div>
+      <!-- // --- City name and Date section ends here ----- //  -->
+
+      <!-- Temprature and tempratrure Icon  -->
+      <div class="temp-info">
+        <div class="discription">
+            <i class=" weather-icon fa-solid fa-"></i>
+            <span class="discription-text">Cloud</span>
+        </div>
+        <div class="temp">20°</div>
+      </div>
+      <!-- Temprature and tempratrure Icon end -->
+      
+      <!-- wind speed , Humidity and Visibility section start -->
+
+      <div class="additional-info">
+            <div class="wind-info">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <h3 class="wind-speed">4 km/h</h3>
+                    <p class="wind-label">Wind</p>
+                    </div>
+            </div>
+            <div class="humidity-info">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <h3 class="humidity">45%</h3>
+                    <p class="humidity-label">Humidity</p>
+                </div>
+            </div>
+            <div class="visibility-info">
+                <i class="fa-solid fa-eye"></i>
+                <div>
+                    <h3 class="visibility-distance">4 km</h3>
+                    <p class="visibility-label">Visibility</p>
+                </div>
+        </div>
+      </div>
+
+      <!-- wind speed , Humidity and Visibility section end -->
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

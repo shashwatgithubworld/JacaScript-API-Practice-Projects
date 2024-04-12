@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(162, 164, 236);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh; 
+}
+.weather-container{
+    background-color: #fff;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+.search-form{
+    display: flex;
+    align-items: center;
+
+}
+input[type="text"]{
+    flex: 1;
+    padding: 20px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+.search-btn{
+    background-color: rgb(119, 119, 241);
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 8px;
+    padding: 20px;
+    font-size:1.2rem ;
+    transition: background-color 0.3s ease;
+}
+.search-btn:hover{
+    background-color:rgb(69, 69, 241);
+}
+.city-date-section{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.city-date-section .city{
+    font-size: 2.1rem;
+    opacity: o.9;
+}
+.city-date-section .date{
+    background-color: #85b3eb;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.temp-info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.temp-info .temp{
+    font-size: 5rem;
+}
+.temp-info .discription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.temp-info .discription i{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+.temp-info .discription span{
+    font-size: 1.5rem;
+}
+
+.additional-info{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.wind-info, .humidity-info, .visibility-info{
+    background-color: rgb(229, 223, 223);
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.additional-info i {
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+.additional-info p{
+    text-align: center;
+}
+.additional-info h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
