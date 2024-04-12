@@ -8,20 +8,17 @@ const date = document.querySelector(".date");
 const weatherIcon = document.querySelector(".weather-icon")
 
 const apiKey = `4ee950fa26db59187a97a02b7582d413`;
-// const cityName = "Pune";
 
 async function fetchWeatherData(city) {
   try {
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
     );
-
     if (!response.ok) {
       throw new Error("Unable to fetch weather data!");
     }
-    
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     updateWeatherUI(data);
 } catch (err) {
     console.log("Please Try again")
