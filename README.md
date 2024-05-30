@@ -1,1 +1,1 @@
-# JacaScript-API-Practice-Projects
+# JavaScript-API-Practice-Projects
